@@ -31,7 +31,7 @@ function infiniteScrollReducer(state, action) {
           ...state,
           imagesUrls: [...state.imagesUrls, ...action.payload.imagesUrls],
           pageNumber: state.pageNumber + 1,
-          status: idleStatus,
+          status: idleStatus
         };
       }
       return state;
@@ -54,7 +54,7 @@ async function fetchImages(state, dispatch, fetch) {
       }
       return dispatch({
         type: fetchSuccess,
-        payload: { imagesUrls: imgs.map((i) => i.download_url) },
+        payload: { imagesUrls: imgs.map(i => i.download_url) }
       });
     } else {
       dispatch({ type: errorFetch });
@@ -68,7 +68,7 @@ const initialState = { imagesUrls: [], status: idleStatus, pageNumber: 1 };
 
 function InfiniteScroll({
   fetch = window.fetch,
-  IntersectionObserver = window.IntersectionObserver,
+  IntersectionObserver = window.IntersectionObserver
 }) {
   const [state, dispatch] = useReducer(infiniteScrollReducer, initialState);
   useEffect(() => {
@@ -78,11 +78,11 @@ function InfiniteScroll({
   }, [fetch, state]);
 
   const observeBorder = useCallback(
-    (node) => {
+    node => {
       if (node !== null) {
         new IntersectionObserver(
-          (entries) => {
-            entries.forEach((en) => {
+          entries => {
+            entries.forEach(en => {
               if (en.intersectionRatio === 1) {
                 dispatch({ type: startFetch });
               }
@@ -114,8 +114,8 @@ function InfiniteScroll({
   }
 
   function renderImages() {
-    return state.imagesUrls.map((url) => (
-      <img key={url} style={imageStyle} src={url} alt="mock alt" />
+    return state.imagesUrls.map(url => (
+      <img key={url} style={imageStyle} src={url} alt="from picsum" />
     ));
   }
 
@@ -136,6 +136,6 @@ const imageStyle = {
   width: "300px",
   height: "200px",
   display: "block",
-  marginBottom: "20px",
+  marginBottom: "20px"
 };
 export { InfiniteScroll };
