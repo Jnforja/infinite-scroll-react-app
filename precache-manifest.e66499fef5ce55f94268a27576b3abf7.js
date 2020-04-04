@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d81228afd543255c21632dfa581f4d49",
+    "revision": "cd71f2282afdaf8845d5e37533722192",
     "url": "/infinite-scroll-react-app/index.html"
   },
   {
-    "revision": "e53e06e9f5edee2a4b24",
+    "revision": "2c0c221b306f5efc82a3",
     "url": "/infinite-scroll-react-app/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/infinite-scroll-react-app/static/js/2.ae0ccb40.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e53e06e9f5edee2a4b24",
-    "url": "/infinite-scroll-react-app/static/js/main.b8dc3237.chunk.js"
+    "revision": "2c0c221b306f5efc82a3",
+    "url": "/infinite-scroll-react-app/static/js/main.8381fdec.chunk.js"
   },
   {
     "revision": "301eb952dbd64c0ef353",
