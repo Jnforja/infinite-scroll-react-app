@@ -1,4 +1,4 @@
-This repository contains the application built in the article [How to implement infinite scroll in React with Hooks and Intersection Observers](https://joaoforja.com/blog/how-to-implement-infinite-scroll-in-react).
+This repository contains the application built in the article [How to implement infinite scroll using React, Hooks and Intersection Observers](https://joaoforja.com/blog/how-to-implement-infinite-scroll-in-react).
 
 Demo: [https://jnforja.github.io/infinite-scroll-react-app](https://jnforja.github.io/infinite-scroll-react-app/)
 
